@@ -35,14 +35,14 @@ that answers four core business questions:
 | Unique suppliers | 350 |
 | Price range | $0.20 – $98.43 |
 | Date range | Feb 2024 – Feb 2025 |
-| Reference date | 2024-12-01 (used for stock age calculations) |
+| Reference date | 2025-03-01 (used for stock age calculations) |
 | Status values | Active (332), Backordered (325), Discontinued (333) |
 
 ---
 
 ## 🐍 Stage 1 — Python
 
-**File:** `notebook/grocery_cleaning.ipynb`
+**File:** `/grocery_cleaning.ipynb`
 
 The notebook handles all data preparation before PostgreSQL ingestion:
 
@@ -52,7 +52,6 @@ The notebook handles all data preparation before PostgreSQL ingestion:
 | Inspect | Check dtypes, sample rows, unique values |
 | Clean | Standardize column names to `snake_case` |
 | Fix types | Strip `$` from `unit_price`, parse date columns |
-| Validate | Assert 0 nulls, 0 duplicates |
 | Export | Save as `grocery_dataset.csv` with `index=False` |
 
 **Libraries:** `pandas`, `numpy`, `kagglehub`
