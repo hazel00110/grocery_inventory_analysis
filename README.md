@@ -210,8 +210,7 @@ grocery-inventory-analysis/
 ├── README.md
 ├── grocery_cleaning.ipynb     ← data prep pipeline
 ├── grocery_postgresql.sql     ← schema + 5 views
-└── data/
-    └── grocery_dataset.csv        ← cleaned export from notebook
+└── grocery_dataset.csv        ← cleaned export from notebook
 ```
 
 ---
